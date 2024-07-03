@@ -1,0 +1,26 @@
+version: "3.1"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_name
+
+- story: provide name
+  steps:
+  - intent: provide_name
+  - slot_was_set:
+    - name: kavya
+  - action: utter_ask_event
+
+
+- story: provide event
+  steps:
+  - intent: provide_event
+  - slot_was_set:
+    - event:
+      - events
+  - action: utter_start_response
+  - action: action_get_ai_response
+

@@ -1,0 +1,55 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    
+- intent: provide_name
+  examples: |
+    - My name is [kavya](name)
+    - [priya](name)
+    - [niki](name)
+    - I am [khaja](name)
+
+
+- intent: provide_event
+  examples: |
+    - about [Indus Valley Civilization](event)
+    - [Indus Valley Civilization](event)
+    - explain about [Vedic Period ](event)
+    - [Vedic Period ](event)
+    - explain about [Maurya Empire](event)
+    - [Maurya Empire](event)
+    - explain about [Gupta Empire](event)
+    - [Gupta Empire](event)
+    - explain about [ancient india](event)
+    - [ancient india](event)
+    - explain about [classical india](event)
+    - [classical india](event)
+    - explain about [medievel india](event)
+    - [medievel india](event)
+    - explain about [independence](event)
+    - [independence](event)
+    - explain about [modern india](event)
+    - [modern india](event)
+    - [1947](event)
+
+- intent: start_response
+  examples: |
+    - response
+    - can you give me a response
+
+
